@@ -11,7 +11,7 @@ model = load_model('my_model.h5')
 class_labels = ['Ahmedabad', 'Delhi', 'Kerala', 'Kolkata', 'Mumbai']
 
 # Set the threshold for minimum accuracy
-threshold = 0.7
+threshold = 0.5
 
 
 # Create a function to process the uploaded image

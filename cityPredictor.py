@@ -4,7 +4,7 @@ from tensorflow.keras.preprocessing import image
 import numpy as np
 
 # Load the trained model
-model = load_model('my_model.h5')
+model = load_model('efficientnetb5-Indian_Cities-94.02.h5')
 
 # Load and preprocess the input image
 img_path = 'C:\\Users\\lenovo\\Desktop\\DATA_VIS\\impact\\Cities\\Testing_Data\\Delhi\\Delhi-Test (55).jpg'

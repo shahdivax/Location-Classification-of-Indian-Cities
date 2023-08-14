@@ -23,7 +23,7 @@ This Streamlit app is designed to detect the location of an Indian city in an up
 Please note that the app may not work accurately for images that are not clear or do not have a distinct view of the city's landmarks.
 
 ## Live Demo
-A live demo of the app is available [here](https://shahdivax-location-classification-of-indian-cities-app-dx9t3a.streamlit.app/) hosted with Streamlit.
+A live demo of the app is available [here](https://location-classification-of-indian-cities.streamlit.app/) hosted with Streamlit.
 
 ## Code
 The code for this app was written in Python. It uses the following libraries:

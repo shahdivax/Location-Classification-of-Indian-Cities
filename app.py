@@ -5,7 +5,7 @@ import numpy as np
 import random
 
 # Load the trained model
-model = load_model('efficientnetb5-Indian_Cities-94.02.h5')
+model = load_model('my_model.h5')
 
 # Define class labels
 class_labels = ['Ahmedabad', 'Delhi', 'Kerala', 'Kolkata', 'Mumbai']
@@ -17,7 +17,7 @@ threshold = 0.5
 # Create a function to process the uploaded image
 def process_image(uploaded_image):
     # Load and preprocess the input image
-    img = image.load_img(uploaded_image, target_size=(224, 224))
+    img = image.load_img(uploaded_image, target_size=(150, 150))
     img = image.img_to_array(img)
     img = np.expand_dims(img, axis=0)
     img = img / 255.0

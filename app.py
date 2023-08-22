@@ -5,13 +5,14 @@ import numpy as np
 import random
 
 # Load the trained model
-model = load_model('efficientnetb5-Indian_Cities-94.02.h5')
+model = load_model('efficientnetb5-indian_cities-73.62.h5')
 
 # Define class labels
 class_labels = ['Ahmedabad', 'Delhi', 'Kerala', 'Kolkata', 'Mumbai']
 
 # Set the threshold for minimum accuracy
-threshold = 0.5
+threshold = 0.3
+acc_range_top = 0.7
 
 
 # Create a function to process the uploaded image
@@ -31,11 +32,11 @@ def process_image(uploaded_image):
     accuracy = predictions[0][predicted_class_index]
 
     # Check if accuracy is below the threshold for all classes
-    if all(accuracy < threshold for accuracy in predictions[0]):
+    if accuracy < threshold:
         return "This location is not in our database."
     else:
         output = f"<span style='font-size: 24px; color: {random.choice(['#FF9800', '#FF5722', '#673AB7', '#009688'])};'>Predicted class: <strong>{predicted_class_label}</strong></span>"
-        acc = f"<span style='font-size: 24px; color: {random.choice(['#FF9800', '#FF5722', '#673AB7', '#009688'])};'>Accuracy: <strong>{accuracy*100:.02f}%</strong></span>"
+        acc = f"<span style='font-size: 24px; color: {random.choice(['#FF9800', '#FF5722', '#673AB7', '#009688'])};'>Accuracy: <strong>{accuracy * 100:.02f}%</strong></span>"
         return output + "<br>" + acc
 
 

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Location Classification</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/index.css') }}">
+    <script src="{{ url_for('static', filename='js/index.js') }}"></script>
+</head>
+<body>
+<div class="nav-bar">
+    <nav>
+        <ul class="nav-links">
+                <li><a href="{{ url_for('home') }}">Home</a></li>
+                <li><a href="{{ url_for('play') }}">Playground</a></li>
+                <li><a href="#">Contact Us</a></li>
+        </ul>
+    </nav>
+    <div class="lg-sn">
+                <a href="{{ url_for('login') }}">Login</a>
+    </div>
+    <div class="lg-sn">
+                <a href="{{ url_for('signup') }}">Signup</a>
+    </div>
+</div>
+<div class="page">
+    <h1>Location Detection Playground</h1>
+    <form method="POST" action="/play" enctype="multipart/form-data" class="form">
+        <input type="file" name="file" onchange="previewFile()">
+        <img id="preview" src="" height="150">
+        <input type="submit" value="Analyze">
+    </form>
+</div>
+<div class="results">
+    <h1>Predicted Result</h1>
+    <p>{{ result | safe }}</p>
+</div>
+</body>
+</html>

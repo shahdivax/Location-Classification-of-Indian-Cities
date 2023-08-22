@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/home.css') }}">
+    <title>Home</title>
+</head>
+<body>
+<div class="nav-bar">
+    <nav>
+        <ul class="nav-links">
+                <li><a href="{{ url_for('home') }}">Home</a></li>
+                <li><a href="{{ url_for('play') }}">Playground</a></li>
+                <li><a href="#">Contact Us</a></li>
+        </ul>
+    </nav>
+    <div class="lg-sn">
+                <a href="{{ url_for('login') }}">Login</a>
+    </div>
+    <div class="lg-sn">
+                <a href="{{ url_for('signup') }}">Signup</a>
+    </div>
+</div>
+<div class="home">
+    <h1>Location Detection</h1>
+<p class="maind">This innovative web application is designed to seamlessly detect the location of an Indian city within an uploaded image. Leveraging the power of deep learning, this cutting-edge model has been trained on a diverse dataset comprising <strong>10,500 images</strong>, meticulously categorized into five distinct classes: Ahmedabad, Delhi, Kerala, Kolkata, and Mumbai. Developed in collaboration with Parul University, the model has attained a commendable <strong>test accuracy of 55.6%</strong>.</p>
+<h2>Using the App is a Breeze:</h2>
+<ul>
+    <li><strong>This method is to run app on Streamlit.</strong></li>
+    <li><strong>Clone the Repository:</strong> Begin by cloning the GitHub repository onto your system using the command provided.<br>
+    <code>git clone https://github.com/shahdivax/Location-Classification-of-Indian-Cities.git</code></li>
+
+    <li><strong>Install Dependencies:</strong> Ensure the necessary libraries are in place by executing the prescribed 'pip install' command.<br>
+    <code>pip install -r requirements.txt</code></li>
+
+    <li><strong>Run the App:</strong> Launch the app via the 'streamlit run' command, following the instructions to switch to the 'master' branch.<br>
+    <code>streamlit run app.py</code><br>
+    Make sure to switch to the <code>master</code> branch before running the app.</li>
+
+    <li><strong>Image Upload:</strong> Upload a JPG or JPEG image, preferably one with a clear view of the city's landmarks.</li>
+
+    <li><strong>Instant Prediction:</strong> Sit back and watch as the app processes your image, accurately predicts the city's location, and displays the predicted location along with the achieved accuracy percentage.</li>
+</ul>
+
+<p>It's worth noting that for optimal results, the app is most effective when presented with images that offer a distinct view of the city's landmarks. Images that lack clarity or don't provide a clear representation might not yield accurate outcomes.</p>
+
+    <p>For those curious, a <strong>live demonstration</strong> of the app's capabilities is readily available<strong> <a href="{{ url_for('play') }}">here</a></strong>, providing a hands-on experience of its functionalities.</p>
+
+<p>Under the hood, this project is underpinned by robust Python coding. Key libraries employed include Flask, which serves as the framework for constructing the user interface, and TensorFlow with Keras, harnessed to load the pre-trained model and process images effectively. Numpy and Pillow  make appearances for seamless Data and Image processing, respectively.</p>
+
+<p>The app's inner workings follow a logical sequence:</p>
+
+<ol>
+    <li><strong>Model Loading:</strong> The trained deep learning model is loaded into the app, setting the stage for its predictive prowess.</li>
+
+    <li><strong>City Labels:</strong> Clear labels for the five Indian cities are defined, forming the foundation for accurate predictions.</li>
+
+    <li><strong>Accuracy Threshold:</strong> An intelligent minimum accuracy threshold is established to ensure reliable predictions.</li>
+
+    <li><strong>Image Processing:</strong> A dedicated function is designed to efficiently process the images uploaded by users.</li>
+
+    <li><strong>User Interface:</strong> The Streamlit app interface presents itself, complete with a user-friendly file uploader.</li>
+
+    <li><strong>Prediction and Display:</strong> Uploaded images undergo processing, leading to the display of predicted location and corresponding accuracy.</li>
+</ol>
+
+<p>The scope for future enhancement of this app is promising. By expanding the size of the training dataset and refining the pre-trained model through a fine-tuning process, accuracy levels could be further elevated. Moreover, the app's capabilities could be extended to recognize distinctive city landmarks, offering an even more nuanced level of performance.</p>
+
+<p>In a world that's increasingly reliant on image processing and pattern recognition, the <strong>Location Classification of Indian Cities</strong> project stands as a testament to the synergy between advanced technology and real-world applications, promising accurate city detection in the blink of an eye.</p>
+
+</div>
+</body>
+</html>

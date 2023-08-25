@@ -13,7 +13,7 @@ name = ""
 app = Flask(__name__)
 
 # Load the trained model
-model = load_model('D:\Python_AI_projects_Storage\Location_classification\my_model.h5')
+model = load_model('../my_model.h5')
 
 # Define class labels
 class_labels = ['Ahmedabad', 'Delhi', 'Kerala', 'Kolkata', 'Mumbai']

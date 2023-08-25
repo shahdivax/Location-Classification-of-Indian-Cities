@@ -5,7 +5,7 @@ This Streamlit app is designed to detect the location of an Indian city in an up
 ## How to Use the App
 1. Clone the GitHub repository:
    ```
-   git clone https://github.com/shahdivax/Location-Classification-of-Indian-Cities.git
+   git clone https://github.com/shahdivax/Location-Classification-of-Indian-Cities.git --branch master
    ```
 2. Install the required libraries:
    ```

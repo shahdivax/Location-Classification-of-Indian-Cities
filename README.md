@@ -32,9 +32,9 @@ https://github.com/shahdivax/Location-Classification-of-Indian-Cities/assets/619
 
 
    <br>
-5. Upload an image in JPG or JPEG format.<br>
-6. The app will display the uploaded image and predict the location of the city in the image.<br>
-7. The predicted location and accuracy percentage will be displayed.
+4. Upload an image in JPG or JPEG format.<br>
+5. The app will display the uploaded image and predict the location of the city in the image.<br>
+6. The predicted location and accuracy percentage will be displayed.
 
 Please note that the app may not work accurately for images that are not clear or do not have a distinct view of the city's landmarks.
 

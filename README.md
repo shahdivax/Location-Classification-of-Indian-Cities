@@ -28,11 +28,7 @@ This Streamlit app is designed to detect the location of an Indian city in an up
    #### Flask Demo:
    
 
-
-
-Uploading Demo.mp4…
-
-
+https://github.com/shahdivax/Location-Classification-of-Indian-Cities/assets/61962983/d29652ab-2e07-4b81-bd6d-c4e53c5f3891
 
 
    <br>

@@ -15,10 +15,18 @@ This Streamlit app is designed to detect the location of an Indian city in an up
    ```
    streamlit run app.py
    ```
-   Make sure to switch to the `master` branch before running the app.
-4. Upload an image in JPG or JPEG format.
-5. The app will display the uploaded image and predict the location of the city in the image.
-6. The predicted location and accuracy percentage will be displayed.
+   For Flask app:
+   change Directory
+   ```
+   cd Flask
+   ```
+   run app:
+   ```
+   flask run
+   ```
+5. Upload an image in JPG or JPEG format.
+6. The app will display the uploaded image and predict the location of the city in the image.
+7. The predicted location and accuracy percentage will be displayed.
 
 Please note that the app may not work accurately for images that are not clear or do not have a distinct view of the city's landmarks.
 

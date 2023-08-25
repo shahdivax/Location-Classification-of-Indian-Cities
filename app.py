@@ -5,7 +5,7 @@ import numpy as np
 import random
 
 # Load the trained model
-model = load_model('Location-Classification-of-Indian-Cities/my_model.h5')
+model = load_model('../my_model.h5')
 
 # Define class labels
 class_labels = ['Ahmedabad', 'Delhi', 'Kerala', 'Kolkata', 'Mumbai']

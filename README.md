@@ -1,6 +1,6 @@
 ## Location Classification of Indian Cities
 
-This Streamlit app is designed to detect the location of an Indian city in an uploaded image. It uses a deep learning model trained on 10,500 images classified into 5 classes of cities including Ahmedabad, Delhi, Kerala, Kolkata, and Mumbai. The model was trained in association with Parul University and currently has a test accuracy of 55.6%.
+This Streamlit app is designed to detect the location of an Indian city in an uploaded image. It uses a deep learning model trained on 10,500 images classified into 5 classes of cities including Ahmedabad, Delhi, Kerala, Kolkata, and Mumbai. The model was trained in association with Parul University and currently has a test accuracy of 66.3%.
 
 ## How to Use the App
 1. Clone the GitHub repository:

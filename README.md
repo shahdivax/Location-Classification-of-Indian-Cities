@@ -40,6 +40,7 @@ Please note that the app may not work accurately for images that are not clear o
 
 ## Live Demo
 A live demo of the app is available [here](https://location-classification-of-indian-cities.streamlit.app/) hosted with Streamlit.
+and [here](https://image-classification-vercel.vercel.app/) hosted with vercel.
 
 ## Code
 The code for this app was written in Python. It uses the following libraries:
